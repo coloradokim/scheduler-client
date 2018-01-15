@@ -1,0 +1,23 @@
+[debug] [2018-01-15T22:54:18.901Z] ----------------------------------------------------------------------
+[debug] [2018-01-15T22:54:18.904Z] Command:       /usr/local/Cellar/node/8.6.0/bin/node /usr/local/bin/firebase open
+[debug] [2018-01-15T22:54:18.905Z] CLI Version:   3.13.1
+[debug] [2018-01-15T22:54:18.905Z] Platform:      darwin
+[debug] [2018-01-15T22:54:18.905Z] Node Version:  v8.6.0
+[debug] [2018-01-15T22:54:18.906Z] Time:          Mon Jan 15 2018 15:54:18 GMT-0700 (MST)
+[debug] [2018-01-15T22:54:18.906Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-01-15T22:54:18.941Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2018-01-15T22:54:18.941Z] > authorizing via signed-in user
+[debug] [2018-01-15T22:54:18.944Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-01-15T22:54:18.944Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/v3IPkyqvOywZ8spW3v3QMYnB8KfR6X16Fny3toC_5gE',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Mon Jan 15 2018 15:54:18 GMT-0700 (MST)
+[debug] [2018-01-15T22:54:19.169Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-15T22:54:19.193Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/scheduler-client  
+ Mon Jan 15 2018 15:54:19 GMT-0700 (MST)
+[debug] [2018-01-15T22:54:19.754Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-15T22:54:19.756Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/scheduler-client/tokens  
+ Mon Jan 15 2018 15:54:19 GMT-0700 (MST)

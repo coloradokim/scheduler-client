@@ -35,38 +35,6 @@ function getUserInput(e) {
   e.preventDefault();
   date = date.value;
   time = time.value;
-  window.location.href = "schedule.html";
+  // window.location.href = "schedule.html";
   showActivities()
-}
-
-const hobbyData = JSON.parse(localStorage.getItem('data'));
-
-const shuffleArray = arr => arr.sort(() => Math.random() - 0.5)
-
-var shuffledArray = shuffleArray(hobbyData)
-
-var columnDiv = document.getElementsByClassName('column');
-
-function createActivityList(shuffledArray, time) {
-  let totalTime = 0;
-  let activities = [];
-  for (var i = 0; i < hobbyArray.length; i++) {
-    if (totalTime <= time) {
-      totalTime += hobbyArray[i].minTime;
-      activities.push(hobbyArray[i]);
-    } else {
-      break;
-    }
-  }
-  activities.pop();
-  return activities;
-}
-
-function showActivities() {
-  let activityList = createActivityList(hobbyData, time);
-  var newSection = document.createElement("section");
-  var newContent = document.createTextNode('hi');
-  newSection.appendChild(newContent);
-  var currentDiv = document.getElementById("div1");
-  document.body.insertBefore(newSection, currentDiv);
 }

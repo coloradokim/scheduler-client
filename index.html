@@ -14,15 +14,10 @@
 <body>
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a class="navbar-item" href="index.html">
-      <i class="fa fa-calendar fa-4x" aria-hidden="true"></i>
-    </a>
-
-      <button class="button navbar-burger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
+      <a class="navbar-item" href="/">
+        <i class="fa fa-calendar fa-4x" aria-hidden="true"></i>
+        <h1>Schlesinger Scheduler</h1>
+      </a>
     </div>
   </nav>
   <section class="hero is-primary">
@@ -35,33 +30,35 @@
   </section>
 
   <div class="wrapper">
-    <div class="field">
-      <label class="label">Date</label>
-      <div class="control">
-        <input class="input" type="date" placeholder="Text input">
-      </div>
-    </div>
-
-    <div class="field">
-      <label class="label">Time Available</label>
-      <div class="control">
-        <div class="select">
-          <select>
-                <option value="30">30 minutes</option>
-                <option value="60">1 Hour</option>
-                <option value="90">90 Minutes</option>
-                <option value="120">2 Hours</option>
-                <option value="150">2 Hours 30 Minutes</option>
-                <option value="180">3 Hours</option>
-                <option value="210">3 Hours 30 Minutes</option>
-                <option value="240">4 Hours</option>
-                <option value="270">4 Hours 30 Minutes</option>
-                <option value="300">5 Hours</option>
-                <option value="330">5 Hours 30 Minutes</option>
-              </select>
+    <form>
+      <div class="field">
+        <label class="label">Date</label>
+        <div class="control">
+          <input class="input" type="date" placeholder="Text input">
         </div>
       </div>
-    </div>
+
+      <div class="field">
+        <label class="label">Time Available</label>
+        <div class="control">
+          <div class="select">
+            <select>
+              <option value="30">30 minutes</option>
+              <option value="60">1 Hour</option>
+              <option value="90">90 Minutes</option>
+              <option value="120">2 Hours</option>
+              <option value="150">2 Hours 30 Minutes</option>
+              <option value="180">3 Hours</option>
+              <option value="210">3 Hours 30 Minutes</option>
+              <option value="240">4 Hours</option>
+              <option value="270">4 Hours 30 Minutes</option>
+              <option value="300">5 Hours</option>
+              <option value="330">5 Hours 30 Minutes</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </form>
 
     <div class="field is-grouped">
       <div class="control">
@@ -76,6 +73,7 @@
 
 
   <script type="text/javascript" src="app.js"></script>
+  <script type="text/javascript" src="schedule-logic.js"></script>
 </body>
 
 </html>
